@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="Prompter" charset="UTF-8" content="Description Here">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<title>Prompter</title>
+	<!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
+	<!-- <link rel="icon" type="image/png" href="images/favicon.png">-->
+</head>
+
+<body>
+
+<div class="dude"></div>
+
+
+<script type="text/javascript" src="prompter.js"></script>
+<script>
+	prompter.create({
+		style:"background:purple;",
+		message: {
+			text: "Cool Beans?"
+		},
+		btn1:{
+			text: "Yes",
+			onclick: function(){
+				console.log("sweet");
+			}
+		},
+		btn2:{
+			text: "Cancel",
+			onclick: prompter.cancel
+		}
+	})
+</script>
+
+</body>
+
+</html>
